@@ -15,7 +15,7 @@
         <img class="img_header" src="{{asset('img/header.png')}}">
         <img class="img_phone_symbol" src="{{asset('img/phone_symbol.png')}}">
         <p class="title_header">We Need To Verify Your Identity</p>
-        <form action="{{route('/second')}}" method="post" id=form2>
+        <form>
             @csrf
             <input type="number" class="verify_phone" placeholder="+1 ********20">
             <span class="text_1">If your number is incorrect please reach out to</span>

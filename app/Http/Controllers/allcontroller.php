@@ -10,6 +10,6 @@ class allcontroller extends Controller
 {
     public function login(Request $request)
     {
-
+//
     }
 }

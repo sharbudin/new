@@ -18,21 +18,21 @@ Route::get('/', function () {
 });
 
 
-Route::post ('/first', function () {
+Route::get('/first', function () {
     return view('first_page');
 });
 
-Route::post ('/second', function () {
+Route::get('/second', function () {
     return view('second_page');
 });
 
-Route::post ('/third', function () {
+Route::get('/third', function () {
     return view('third_page');
 });
 
-Route::post ('/dashboard', function () {
+Route::get('/dashboard', function () {
     return view('dashboard');
 });
-Route::get ('/loan', function () {
+Route::get('/laon', function () {
     return view('loan');
 });
