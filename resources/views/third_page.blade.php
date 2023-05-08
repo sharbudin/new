@@ -17,7 +17,7 @@
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-        <form>
+        <form action="{{route('dashboard')}}" method="get">
             <input type="hidden" name="email" value="email">
             <input type="text" name="otp" class="verify_phone2" placeholder="Enter Code">
             <span class="text_1">If your number is incorrect please reach out to</span>

@@ -16,13 +16,13 @@
                 <img class="img_login" src="{{asset('img/login_img.png')}}">
                 <img  class="img_header" src="{{asset('img/header.png')}}">
                 <p class="title_header">Welcome to Acra Lending Broker Portal</p>
-                <form action="" method="">
+                <form action="{{route('second')}}" method="get">
                     @csrf
                     <input type="email" value="{{old('email')}}" name="email" class="login_email" placeholder="Email ID">
                     <input type="password" name="password" class="login_password" placeholder="Password">
                     <input type="checkbox" class="rembox" name="rememberBox" value="Remember me" id="rememberBox"><span class="rememberText">Remember me</span>
                     <span  class="forgetPassword">Forget Your Password?</span>
-                    <a href="{{ route('second')  }}"><button class="button_Next" type="submit" value="submit"><span class="text_Next">Next</span></button></a>
+                    <button class="button_Next" type="submit" value="submit"><span class="text_Next">Next</span></button>
                 </form>
 
 

