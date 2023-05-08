@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/first', [allcontroller::class,'ui_first'])->name('first');
+Route::get('/', [allcontroller::class,'ui_first'])->name('first');
 Route::get('/second', [allcontroller::class,'ui_second'])->name('second');
 Route::get('/third', [allcontroller::class,'ui_third'])->name('third');
 Route::get('/dashboard', [allcontroller::class,'dash'])->name('dashboard');
